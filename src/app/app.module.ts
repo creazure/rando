@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HikeComponent } from './hike/hike.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HikeComponent
   ],
   imports: [
     BrowserModule
