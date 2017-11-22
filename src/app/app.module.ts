@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { HikeComponent } from './hike/hike.component';
+import { HikeModule } from './hike/hike.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HikeComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HikeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
