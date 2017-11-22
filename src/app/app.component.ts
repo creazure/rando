@@ -17,7 +17,12 @@ export class AppComponent {
 
   // tslint:disable-next-line:use-life-cycle-interface
   ngOnInit() {
-    this.hikes = this._hikeService.getHikes();
+    // this.hikes = this._hikeService.getHikes();
+    this._hikeService.getHikesFromAPI()
+                     .subscribe(
+                                res => this.hikes = res,
+                                err => console.error(err.status)
+                      )
     console.log(this.hikes);
   }
 }
