@@ -22,7 +22,7 @@ export class AppComponent {
                      .subscribe(
                                 res => this.hikes = res,
                                 err => console.error(err.status)
-                      )
+                      );
     console.log(this.hikes);
   }
 }
